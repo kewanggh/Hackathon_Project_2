@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Boom">
 <head>
   <meta charset="UTF-8">
-  <title>Gulp Demo</title>
+  <title>Boomm Music</title>
 <!-- bower:css -->
 <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -11,17 +11,37 @@
 <!-- inject:css -->
 <link rel="stylesheet" href="/app/style/style.css">
 <!-- endinject -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 
 <body>
+
+  <div class="well well-lg">
+    <h1>B&#246;&#246;mm Music</h1>
+    <p>This app lets you search for you favourtite songs, lyrics and lets you download the whole song in mp3 format.  Enjoy!</p>
+    <p>The APIs used in this app are musiXmatch and Deezer from Mashape marketplace.</p>
+  </div>
+
+<div ui-view></div>
+
+
 <!-- bower:js -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/photoset-grid/jquery.photoset-grid.min.js"></script>
+<script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
 <!-- endbower -->
-<h1>HEYA</h1>
+
 <!-- inject:js -->
+<script src="/app/app.js"></script>
+<script src="/app/boom.controller.js"></script>
+<script src="/app/boom.detail.controller.js"></script>
+<script src="/app/boom.service.js"></script>
+<script src="/app/interceptors.js"></script>
 <!-- endinject -->
 </body>
 </html>

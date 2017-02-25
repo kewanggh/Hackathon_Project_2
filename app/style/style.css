@@ -1,0 +1,85 @@
+.moviePoster {
+  width: 80px;
+  height: 100px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+audio {
+opacity: 0.7;
+}
+
+#musicPlayer {
+  display: table;
+  margin: 0 auto;
+}
+
+body {
+  margin: 10px 20px 10px 20px;
+}
+
+#lyricsBox {
+  margin: 20px 20px 20px 20px;
+}
+
+.lyric {
+    line-height: 30px;
+}
+
+.center {
+  display:block;
+text-align:center;
+margin-bottom: 10px;
+}
+
+#musicImage {
+  background: url("/app/style/music.png") no-repeat center center;
+  opacity: .7;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+
+}
+
+* { box-sizing: border-box; }
+
+
+/* ---- grid ---- */
+
+.grid {
+/*
+  max-width: 1200px;*/
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 300px;
+  height: 500px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width: 340px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 300px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
