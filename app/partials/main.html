@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+  <div class="col-lg-12">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for..." ng-model="vm.song" autofocus>
+    <span class="input-group-btn">
+      <!-- <button class="btn btn-default" type="button"></button> -->
+      <a ui-sref="main.results" ng-click="vm.search(vm.song)" class="btn btn-default">Go!</a>
+    </span>
+  </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <br><br><br>
+  <div ui-view></div>
+  <div id="musicImage" ng-show="!vm.results">
+
+  </div>
+  <!-- <img src="/app/style/music.png" ng-show="!vm.results" alt="" id="musicImage"> -->
+  </div><!-- /.row -->
+</div>
